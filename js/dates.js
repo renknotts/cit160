@@ -1,0 +1,1 @@
+document.querySelector("datemod").textcontent = document.lastModified;
