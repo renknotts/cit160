@@ -10,13 +10,13 @@
     <script>
         function getTotalDue() {
             // Declarations
-            let discountAmount = 100;
+            const discountAmount = 10;
             
             // Input
             const discount = document.getElementById ('discount').value;
 
             // Processing
-             discountAmount = 100 - 10;
+             getTotalDue = discountAmount - 100;
 
             // Output
             document.getElementById ('total').innerHTML = total;
@@ -38,7 +38,7 @@
         <input type="text" id="model">
         <label for="discount">Discount Amount: </label><input type="number" id="discount">
         <div class="processing"><button onclick="getTotalDue()">Compute Total</button></div>
-        <p id="total"></p>
+        <p id = "total"></p>
     </main>
     </div>
     <footer>©️2022 .:|:. Ren Knotts .:|:. CIT 160 at BYU-Idaho</footer>
