@@ -10,13 +10,13 @@
     <script>
         function getTotalDue() {
             // Declarations
-            const discountAmount = 10;
+            const discount = 10;
             
             // Input
             const discount = document.getElementById ('discount').value;
 
             // Processing
-             getTotalDue = discountAmount - 100;
+             let total = discount - 100;
 
             // Output
             document.getElementById ('total').innerHTML = total;
