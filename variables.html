@@ -16,7 +16,7 @@
             
 
             // Processing
-             let total = discount + 100 - discount;
+             let total = 100 - number;
 
             // Output
             document.getElementById ('total').innerHTML = total;
@@ -38,7 +38,8 @@
         <input type="text" id="model">
         <label for="discount">Discount Amount: </label><input type="number" id="discount">
         <div class="processing"><button onclick="getTotalDue()">Compute Total</button></div>
-        <p id = "total">Registration Total:</p>
+        <p>Registration Total:</p>
+        <p id = "total"></p>
     </main>
     </div>
     <footer>©️2022 .:|:. Ren Knotts .:|:. CIT 160 at BYU-Idaho</footer>
