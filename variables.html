@@ -10,14 +10,14 @@
     <script>
         function getTotalDue() {
             // Declarations
-            const discount = 0;
-            
+            const discountAmount = 0;
+            let total = 0;
         
             // Input
             const discount = parseInt(document.getElementById ('discount').value);
 
             // Processing
-             let total = 100 - discount;
+            total = 100 - discount;
 
             // Output
             document.getElementById ('total').innerHTML = total;
