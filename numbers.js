@@ -9,9 +9,9 @@ function getTotal() {
      let q3 = 0;
 	 let p3 = 0;
 
-     let discount = .10;
+     const discount = .10;
 
-     let tax = .075;
+     const tax = .075;
 
      let output = 0;
 
@@ -22,9 +22,9 @@ function getTotal() {
      q3 = parseInt(document.querySelector('#q3').value);
      p3 = parseInt(document.querySelector('#p3').value);
 
-     discount = parseInt(document.querySelector('#discount').value);
+     const discount = parseInt(document.querySelector('#discount').value);
 
-     tax = parseInt(document.querySelector('#tax').value);
+     const tax = parseInt(document.querySelector('#tax').value);
 
 	// PROCESSING
 	 
