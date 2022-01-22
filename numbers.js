@@ -22,9 +22,7 @@ function getTotal() {
      q3 = parseInt(document.querySelector('#q3').value);
      p3 = parseInt(document.querySelector('#p3').value);
 
-     const discount = parseInt(document.querySelector('#discount').value);
-
-     const tax = parseInt(document.querySelector('#tax').value);
+  
 
 	// PROCESSING
 	 
