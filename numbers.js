@@ -13,6 +13,8 @@ function getTotal() {
 
      let tax = .075;
 
+     let output = 0;
+
      q1 = parseInt(document.querySelector('#q1').value);
      p1 = parseInt(document.querySelector('#p1').value);
      q2 = parseInt(document.querySelector('#q2').value);
@@ -26,7 +28,7 @@ function getTotal() {
 
 	// PROCESSING
 	 
-
+    output = q1*p1 + q2*p2 + q3*p3 - discount + tax;
 	
 	//OUTPUT
 	 document.querySelector('#output').innerHTML = `$$`;
