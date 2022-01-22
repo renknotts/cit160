@@ -9,9 +9,9 @@ function getTotal() {
      let q3 = 0;
 	 let p3 = 0;
 
-     const discount = .10;
+     let discount = .10;
 
-     const tax = .075;
+     let tax = .075;
 
      let output = 0;
 
