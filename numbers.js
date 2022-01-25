@@ -31,5 +31,5 @@ function getTotal() {
     output = q1*p1 + q2*p2 + q3*p3 * discount + tax;
 	
 	//OUTPUT
-	 document.querySelector('#output').innerHTML = `Total Price = $${total_2.toFixed(2)}.`;
+	 document.querySelector('#output').innerHTML = `Total Price = $${output.toFixed(2)}.`;
 }
