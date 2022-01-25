@@ -9,25 +9,27 @@ function getTotal() {
      let q3 = 0;
 	 let p3 = 0;
 
-     const discount = .10;
+     let discount = 0;
 
-     const tax = .075;
+     let tax = 0;
 
      let output = 0;
 
      q1 = parseInt(document.querySelector('#q1').value);
-     p1 = parseInt(document.querySelector('#p1').value);
+     p1 = parseFloat(document.querySelector('#p1').value);
      q2 = parseInt(document.querySelector('#q2').value);
-     p2 = parseInt(document.querySelector('#p2').value);
+     p2 = parseFloat(document.querySelector('#p2').value);
      q3 = parseInt(document.querySelector('#q3').value);
-     p3 = parseInt(document.querySelector('#p3').value);
+     p3 = parseFloat(document.querySelector('#p3').value);
 
+     discount = parseFloat (document.querySelector('#discount').value);
+     tax = parseFloat (document.querySelector('#tax').value);
   
 
 	// PROCESSING
 	 
-    output = q1*p1 + q2*p2 + q3*p3 - discount + tax;
+    output = q1*p1 + q2*p2 + q3*p3 * discount + tax;
 	
 	//OUTPUT
-	 document.querySelector('#output').innerHTML = `$`;
+	 document.querySelector('#output').innerHTML = `Total Price = $${total_2.toFixed(2)}.`;
 }
