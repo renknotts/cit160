@@ -8,7 +8,7 @@
     <script>
         document.querySelector('#copyright').textContent = new Date().getFullYear();
 
-        function ___() {
+        function storyTime() {
 	    // INPUT
             let firstname = 0;
             let fruit = 0;
@@ -20,9 +20,9 @@
             fruit = parseInt(document.querySelector('#fruit').value);
             animal1 = parseInt(document.querySelector('#animal1').value);
             animal2 = parseInt(document.querySelector('#animal2').value);
-            
+
 	    // PROCESSING
-	 
+	 const output = `And it came to pass that the people of ${firstname} did till the land, and raise all manner of ${animal1}, and flocks of herds, and flocks of all manner of ${animal2} of every kind, and ${fruit}.`;
 	
 	    //OUTPUT - Example output: "And it came to pass that the people of ___ did till the land, and raise all manner of ___, and flocks of herds, and flocks of all manner of ___ of every kind, and ___."
 	 
@@ -41,7 +41,7 @@
         <label class="heading">Name an animal: <input type="text" id="animal1" placeholder="horse"></label>
         <label class="heading">Name another animal: <input type="text" id="animal2" placeholder="lamb"></label>
     
-        <div class="process"><button onclick="___()">Build Story</button>
+        <div class="process"><button onclick="storyTime()">Build Story</button>
         </div>
         <p id="output"></p>
     </main>
