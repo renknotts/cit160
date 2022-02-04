@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert</title>
 <script>
+    function convert(){
 //input
 
 let pounds = 0
+let output = 0
 
 pounds = parseFloat(document.getSelector('#pounds').value);
 
 //processing
 
+output = pounds / 2.2046;
 
 
 //output
+document.querySelector('#output').innerHTML = `Kilos = $${output.toFixed(2)}.`;
+
+    }
 </script>
 
 </head>
