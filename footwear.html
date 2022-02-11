@@ -6,7 +6,21 @@
     <title>Weather</title>
 
     <script>
-   
+   function checkweather() {
+
+
+
+    if (sunny === sandles) {
+  alert('sandles!');
+} else if (rainy === galoses) {
+  alert('goloses');
+}else if (snowing === boots){ 
+    alert ('boots')
+}
+
+
+
+   }
 
        
     </script>
@@ -18,10 +32,10 @@
     <label for="weather">Select the weather type today: </label>
     <select id="weather">
       <option value="">--Make a choice--</option>
-      <option value="sunny">Sunny</option>
-      <option value="rainy">Rainy</option>
-      <option value="snowing">Snowing</option>
-      <option value="overcast">Overcast</option>
+      <option value="sunny" id= "sunny">Sunny</option>
+      <option value="rainy" id= "rainy">Rainy</option>
+      <option value="snowing" id="snowing">Snowing</option>
+
     </select><br>
     <br> 
 <button onclick="checkWeather()"></button>
