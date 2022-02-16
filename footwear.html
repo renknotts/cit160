@@ -8,15 +8,29 @@
     <script>
   function checkWeather() {
 
-  const select = deocument.getElementById('select').value;
+  
   const weather = select.value;
 
-  if (weather == sunny) {
-  para.textContent = 'sandles';
-} else if (weather === rainy) {
-  para.textContent = 'goloses';
-} else if (weather === snowing){ 
-    para.textContent = 'boots';
+  const select = document.querySelector('select');
+
+  select.addEventListener('change', checkWeather);
+
+  switch (weather) {
+    case 'sunny':
+      para.textContent = 'Sandels';
+      break;
+    case 'rainy':
+      para.textContent = 'Goloshes';
+      break;
+    case 'snowing':
+      para.textContent = 'Boots';
+      break;
+
+    default:
+      para.textContent = '';
+  }
+
+
 } 
 
   document.getElementById('shoes').textContent;
