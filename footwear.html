@@ -8,12 +8,12 @@
     <script defer>
   function checkWeather() {
 
-  
-  const weather = select.value;
-
   const select = document.querySelector('select');
 
   select.addEventListener('change', checkWeather);
+
+  const weather = select.value;
+
 
   switch (weather) {
     case 'sunny':
