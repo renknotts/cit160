@@ -8,21 +8,21 @@
     <script>
    function checkWeather() {
 
-let weather = 0;
+
 
 weather = (document.querySelector('#weather').value);
 
 
 
-weather = select.value;
+const weather = select.value;
 
 
-    if (sunny === sandles) {
-  para.textContent('sandles');
-} else if (rainy === galoses) {
-  para.textContent('goloses');
-}else if (snowing === boots){ 
-    para.textContent('boots');
+  if (weather == sunny) {
+  para.textContent = 'sandles';
+} else if (weather === rainy) {
+  para.textContent = 'goloses';
+} else if (weather === snowing){ 
+    para.textContent = 'boots';
 } 
 
 document.getElementById('shoes').innerHTML= shoes;
