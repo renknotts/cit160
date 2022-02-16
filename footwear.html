@@ -9,7 +9,7 @@
   function checkWeather() {
 
 
-  let weather = document.querySelector('#weather').value;
+  let weather = (document.querySelector('#weather').value);
 
   if (weather == sunny) {
   para.textContent = 'sandles';
@@ -19,7 +19,7 @@
     para.textContent = 'boots';
 } 
 
-  document.getElementById('shoes').innerHTML= shoes;
+  document.getElementById('shoes').textContent = shoes;
 
 
    }
