@@ -23,7 +23,7 @@
         function checkDiscount(){
         const now = new Date();
         let subTotal = 0;
-        let output = subTotal + .06;
+        let output = 0;
 
      // Input
      const theMonth = now.getMonth(); 
@@ -37,12 +37,16 @@
      if (subtotal <= 50 && theDay === 2 || theDay === 3) {
       output = subTotal - .10; 
      }
+      else if (output = subTotal - .06){
+
+     }
+     
 
      // OUTPUT
 
      document.querySelector('#output').innerHTML = `Total Price = $${output.toFixed(2)}.`;
 
-        }
+    }
 
     </Script>
     
