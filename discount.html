@@ -25,6 +25,7 @@
         let subtotal = 0;
         let output = 0;
         let tax = .06;
+        let discount = .10;
 
      // Input
      const theMonth = now.getMonth(); 
@@ -37,7 +38,7 @@
      // Processing
 
      if (subtotal < 50 && theDay === 2 && theDay === 3) {
-      output = .10 - subTotal + tax; 
+      output = discount - subtotal + tax; 
      }
       else {
      output = subtotal + tax;
