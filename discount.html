@@ -20,12 +20,12 @@
     </footer>
 
     <script>
-        function checkDiscount(){
-        const now = new Date();
-        let subtotal = 0;
-        let output = 0;
-        let tax = .06;
-        let discount = .10;
+    function checkDiscount(){
+    const now = new Date();
+    let subtotal = 0;
+    let output = 0;
+    const tax = .06;
+    const discount = .10;
 
      // Input
      const theMonth = now.getMonth(); 
@@ -46,7 +46,7 @@
       }
      // OUTPUT
 
-     document.querySelector('#output').innerHTML = `Total Price = $${output.toFixed(2)}.`;
+    document.querySelector('#output').innerHTML = `Total Price = $${output.toFixed(2)}.`;
 
     }
 
