@@ -11,7 +11,7 @@
         <h2>Ren Knotts</h2>
     </header>
     <main>
-        <label><input type="text" id="subTotal" size="7"></label>
+        <label><input type="text" id="subtotal" size="7"></label>
         <label><button onclick="checkDiscount()">Price</button></label>
         <p id= "output"></p>
     </main>
@@ -22,26 +22,26 @@
     <Script>
         function checkDiscount(){
         const now = new Date();
-        let subTotal = 0;
+        let subtotal = 0;
         let output = 0;
+        let tax = .06;
 
      // Input
      const theMonth = now.getMonth(); 
      const theDate = now.getDate(); 
      const theDay = now.getDay();   
-     subtotal = parseFloat(document.querySelector('#subTotal').value);
+     subtotal = parseFloat(document.querySelector('#subtotal').value);
+     tax = parseFloat (document.querySelector('#tax').value);
 
     
      // Processing
 
-     if (subTotal < 50 && theDay === 2 && theDay === 3) {
-      output = .10 - subTotal; 
+     if (subtotal < 50 && theDay === 2 && theDay === 3) {
+      output = .10 - subTotal + tax; 
      }
-      else if (output = .06 - subTotal){
-
-     }
-     
-
+      else {
+     output = subtotal + tax;
+      }
      // OUTPUT
 
      document.querySelector('#output').innerHTML = `Total Price = $${output.toFixed(2)}.`;
