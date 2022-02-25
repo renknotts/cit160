@@ -9,26 +9,40 @@
 
 <body>
     <h2>Fixed Loops</h2>
-    <button onclick="fixLoops()">Answer</button>
+    <h4>Display1</h4>
+    <button onclick="fixLoops()">Answer #1</button>
     <p id="display1"></p>
-    
+    <h4>display2</h4>
+    <button onclick="fixLoops2()">Answer #2</button>
+    <p id="display2"></p>
+
     <script>
-         function fixLoops(){
+        function fixLoops() {
             let output1 = '';
             let i = 0;
             while (i < 2) {
-                output1 += "<br>Part 1:" + i; 
+                output1 += "<br>Part 1:" + i;
                 i++;
             }
             document.getElementById('display1').innerHTML = output1;
+        }
+        function fixLoops2() {
 
-
+            let output2 = '';
+            for (let i = 0; i > 3; i++) {
+                if (i !== 2) {
+                    output2 += "Part 2:" + i;
+                }
+                else {
+                    output2 += "Part 2:" + i;
+                }
+            }
+            document.getElementById('display2').textContent = output2;
         }
 
 
 
 
-        
 
 
 
