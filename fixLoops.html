@@ -54,7 +54,20 @@
 
 
         }
+        function fixLoops4() {
 
+            let balance = 1000;
+            const rate = .10;
+            let n = 30;
+            for (let i = 0; i < n; i++)
+                interest = balance * rate;
+            balance += interest;
+            document.getElementById('display4').textContent = balance.toFixed(2);
+
+
+
+
+        }
 
 
 
