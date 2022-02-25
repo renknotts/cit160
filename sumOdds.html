@@ -12,13 +12,23 @@
 
     <script>
         function sumOdds(){
+
+            // Get user input
             let n = parseInt(document.querySelector('#upperLimit').value);
             let sum = 0;
+            // Processing
+          //  for(let i = 1; i <= n; i = i + 2){
+              //  sum += i; 
+            //}
 
-            for(let i = 1; i <= n; i = i + 2){
-                sum += i; 
+            let i = 1;
+
+            while (i <= n) {
+                sum += i;
+                i = 1 + 2;
+
             }
-
+            // output 
             document.querySelector('#sum').textContent = sum;
 
 
