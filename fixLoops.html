@@ -9,10 +9,10 @@
 
 <body>
     <h2>Fixed Loops</h2>
-    <h4>Display1</h4>
+    <h4>Display #1</h4>
     <button onclick="fixLoops()">Answer #1</button>
     <p id="display1"></p>
-    <h4>display2</h4>
+    <h4>Display #2</h4>
     <button onclick="fixLoops2()">Answer #2</button>
     <p id="display2"></p>
 
@@ -29,13 +29,9 @@
         function fixLoops2() {
 
             let output2 = '';
-            for (let i = 0; i > 3; i++) {
-                if (i !== 2) {
+            for (let i = 0; i < 3; i++) {
                     output2 += "Part 2:" + i;
-                }
-                else {
-                    output2 += "Part 2:" + i;
-                }
+                
             }
             document.getElementById('display2').textContent = output2;
         }
