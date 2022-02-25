@@ -6,8 +6,8 @@
     <title>Sum of Odds</title>
 </head>
 <body>
-    <label>Enter a Number: <input type="text" id="upperLimit"> Sum </label>
-    <button onclick="sumOdds()"> </button>
+    <label>Enter a Number: <input type="text" id="upperLimit"> </label>
+    <button onclick="sumOdds()"> Answer </button>
     <div id="sum"> </div>
 
     <script>
@@ -15,7 +15,7 @@
             let n = parseInt(document.querySelector('#upperLimit').value);
             let sum = 0;
 
-            for(let i = 1; i <= n; i + 2){
+            for(let i = 1; i <= n; i = i + 2){
                 sum += i; 
             }
 
