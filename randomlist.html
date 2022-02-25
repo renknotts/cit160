@@ -11,8 +11,15 @@
     <p id="random"></p>
 <script>
 function randomNumber(){
-    let random = Math.floor(math.random() * 50)+1;
+    let output1 = '';
 
+
+    let random = Math.floor(Math.random() * 50);
+
+        output1 += "Item:";
+
+
+    document.getElementById('random').innerHTML = output1;
 
 
 
