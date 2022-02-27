@@ -8,11 +8,12 @@
 <body>
     <h2>Random Number</h2>
     <button onclick=" document.getElementById('random').innerHTML = randomNumber(1,50)">Answer</button>
-    <p id="random"> Item: </p>
+    <p id="random"></p>
 <script>
 function randomNumber(min,max){
+
     return Math.floor(Math.random() * (min + max));
-}
+}   random += "<br>Item:" + randomNumber; 
 </script>
 
 </body>
