@@ -15,11 +15,11 @@
         function randomNumber() {
             let output1 = '';
             let i = 0;
-            while (i < 5) {
-                output1 += "<br>Item:" + i + Math.random(1,50);
+            while (i < 50) {
+                output1 += "<br>Item:" + i * Math.random(); 
                 i++;
             }
-            document.getElementById('random').textContent = output1.toFixed(0);
+            document.getElementById('random').textContent = output1;
         }
 
   
