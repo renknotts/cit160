@@ -14,9 +14,11 @@
     <script>
         function randomNumber() {
             let output1 = '';
-            let i = 0;
-            while (i < 50) {
-                output1 += "<br>Item:" + i * Math.random(1,50); 
+            let i = 1;
+            const max = 50
+            let upperLimit = Math.floor(Math.random() * max);
+            while (i < upperLimit) {
+                output1 += `Item: ${i}`; 
                 i++;
             }
             document.getElementById('random').innerHTML = output1;
