@@ -16,14 +16,16 @@
 
 
         function fiveTimes() {
+
+            let output = '';
             const skip = 5;
             let n = 12;
             let i = 0;
             while (i < n) {
-                alert("5x1=") + i;
+                output += `5x1= ${i}`;
                 i += skip;
             }
-
+            document.getElementById('display1').innerHTML = output;
 
         }
 
