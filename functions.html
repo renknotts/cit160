@@ -35,10 +35,10 @@
             let aDiscount = amountDiscount(subtotal)
             total = total - subtotal * aDiscount;
             // add tax
-            total = total + total * 
+            total = total + total * statetax;
             // display total
 
-            document.querySelector("#total").innerHTML = total;
+            document.querySelector("#total").innerHTML = `Total Amount Due: $${total.toFixed(2)`;
         }
         function amountDiscount(st){
             aDiscount = 0;
