@@ -23,18 +23,39 @@
             let subtotal = parseFloat(document.querySelector('#subtotal').value);
 
             // determine if there is a day discount
+            let discount = dayDiscount();
+            subtotal = subtotal * (1 - discount);
             // determine if there is an amount discount
             // add tax
             // display total
 
             document.querySelector('#total').innerHTML = total;
+        }
+        function dayDiscount(){
+            let dayofweek = new Date.getDay();
+            switch (dayofweek){
+                case 1:
+                    discount = .10;
+                    break;
+                case 2:  
+                    discount = .15;
+                    break;
+                case 3:
+                    discount = .20;  
+                    break;
+                case 4: 
+                    discount = .15;
+                    break;
+                case 5:
+                    discount = .05;
+                    break;    
 
-
-
-
-
+            }
+            return discount
 
         }
+
+
     </script>
 
 
