@@ -24,13 +24,23 @@
 
             // determine if there is a day discount
             let discount = dayDiscount();
-            subtotal = subtotal * (1 - discount);
+            total = subtotal * (1 - discount);
             // determine if there is an amount discount
+            let adiscount = amountDiscount(subtotal)
             // add tax
             // display total
 
             document.querySelector("#total").innerHTML = total;
         }
+        function amountDiscount(st){
+            aDiscount = 0;
+            if (st > 100){
+                aDiscount = .10;
+            }
+            return aDiscount;
+
+        }
+
         function dayDiscount(){
             let d = new Date()
             let dayofweek = d.getDay();
