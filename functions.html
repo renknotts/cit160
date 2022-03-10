@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,37 @@
 </head>
 
 <body>
-<h2>Discount Functions</h2>
-<label for="subtotal"><input type="text" id="subtotal"></label>
-<button onclick='discountFunction()'>My Discount Functions</button>
-<div id="output1"></div>  
+    <h2>Discount Functions</h2>
+    <label for="subtotal"><input type="text" id="subtotal"></label>
+    <button onclick='processTotal()'>Process Total</button>
+    <div id="output1"></div>
 
 
-<script>
-function discountFunction(){
+    <script>
+        function processTotal() {
+
+            // declarations  
+            let total = 0;
+            // Input
+            let subtotal = parseFloat(document.querySelector('#subtotal').value);
+
+            // determine if there is a day discount
+            // determine if there is an amount discount
+            // add tax
+            // display total
+
+            document.querySelector('#total').innerHTML = total;
 
 
 
 
 
 
-
-
-
-}
-</script>
+        }
+    </script>
 
 
 
 </body>
+
 </html>
