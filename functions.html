@@ -10,6 +10,12 @@
 <body>
     <h2>Discount Functions</h2>
     <label for="subtotal"><input type="text" id="subtotal"></label>
+    <label for="state"><select name="state" id= "state">
+    <option value= ".08">Virginia</option>
+    <option value= ".07">Ohio</option>
+    <option value= ".05">Nevada</option>
+    </select>
+    </label><br><br> 
     <button onclick='processTotal()'>Process Total</button>
     <div id="output1"></div>
 
@@ -27,7 +33,9 @@
             total = subtotal * (1 - discount);
             // determine if there is an amount discount
             let aDiscount = amountDiscount(subtotal)
+            total = total - subtotal * aDiscount;
             // add tax
+            total = total + total * 
             // display total
 
             document.querySelector("#total").innerHTML = total;
