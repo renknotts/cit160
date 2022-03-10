@@ -32,7 +32,8 @@
             document.querySelector('#total').innerHTML = total;
         }
         function dayDiscount(){
-            let dayofweek = new Date.getDay();
+            let d = new Date()
+            let dayofweek = new d.getDay();
             switch (dayofweek){
                 case 1:
                     discount = .10;
