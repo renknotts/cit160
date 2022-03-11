@@ -10,7 +10,7 @@
 <body>
     <h2>Wind Chill</h2>
 
-    <label for="temperature">temperature<input type="text" id="temperature"></label>
+    <label for="Temperature">temperature<input type="text" id="temperature"></label>
     <br>
     <label for="windSpeed">Wind Speed<input type="text" id="windSpeed"></label>
     <br>
@@ -22,7 +22,7 @@
     <script>
         function doInputOutput() {
             // Declarations
-            let  = 0;
+            let output = 0;
 
             // Input
             let tempF = parseFloat(document.querySelector('#temperature').value);
@@ -37,8 +37,7 @@
         function windChill(tempF, speed) {
             // Processing
             let windTemp = 0;
-            let tempF = 0;
-            let speed = 0;
+           
             if (tempF < 50 && speed < 3){
                 windTemp = 35.74 + 0.6215*tempF - 35.75*Math.pow(speed,0.16) + 0.4275*tempF*Math.pow(Speed,0.16);
             }
