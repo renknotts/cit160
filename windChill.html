@@ -37,11 +37,12 @@
         function windChill(tempF, speed) {
             // Processing
             let windTemp = 0;
+            let result = ""
            
             if (tempF > 50 && speed < 3){
-                windTemp  = 35.74 + 0.6215*tempF - 35.75*Math.pow(speed,0.16) + 0.4275*tempF*Math.pow(speed,0.16);
+               result  = 35.74 + 0.6215*tempF - 35.75*Math.pow(speed,0.16) + 0.4275*tempF*Math.pow(speed,0.16);
             }
-            return windTemp;
+            return result;
         }
     </script>
 
