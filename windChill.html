@@ -28,6 +28,7 @@
             let tempF = parseFloat(document.querySelector('#temperature').value);
             let speed = parseFloat(document.querySelector('#windSpeed').value);
             let windTemp = windChill(tempF,speed);
+            let result  = 35.74 + 0.6215*tempF - 35.75*Math.pow(speed,0.16) + 0.4275*tempF*Math.pow(speed,0.16);
   
 
             // Output
@@ -40,9 +41,9 @@
             let result = ""
            
             if (tempF > 50 && speed < 3){
-               result  = 35.74 + 0.6215*tempF - 35.75*Math.pow(speed,0.16) + 0.4275*tempF*Math.pow(speed,0.16);
+             
             }
-            return n/a;
+            return result;
         }
     </script>
 
