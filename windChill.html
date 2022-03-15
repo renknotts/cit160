@@ -22,25 +22,24 @@
     <script>
         function doInputOutput() {
             // Declarations
-            let output = 0;
+            let wChill = 0;
 
             // Input
             let tempF = parseFloat(document.querySelector('#temperature').value);
             let speed = parseFloat(document.querySelector('#windSpeed').value);
-            let wChill = windChill(tempF, speed);
-            if (tempF < 50 && speed > 3){
-                output =  35.74 + 0.6215*tempF - 35.75*Math.pow(speed,0.16) + 0.4275*tempF*Math.pow(speed,0.16);
+            
+            if (tempF < 50 && speed >= 3){
+                wChill = windChill(tempF, speed);
             }
+                
 
             // Output
-            document.querySelector("#output").innerHTML = `Wind chill is: ${output.toFixed(0)}`;
+            document.querySelector("#output").innerHTML = `Wind chill is: ${wChill.toFixed(0)} F`;
         }
 
-        function windChill(tempF, speed) {
+        function windChill(t, s) {
             // Processing
-            let wChill = 0;
-            
-           return output;
+            return 35.74 + 0.6215*t - 35.75*Math.pow(s,0.16) + 0.4275*t*Math.pow(s,0.16);
         }
     </script>
 
