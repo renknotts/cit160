@@ -16,7 +16,7 @@
     <br>
     <label for="year">Years<input type="text" id="year"></label>
     <br>
-    
+
     <button onclick="doFV()">Future Total</button>
     <br>
     <div id="total"></div>
@@ -24,10 +24,18 @@
     <script>
         function doFV() {
 
+            let total = 0;
+
+            let p = parseFloat(document.querySelector('#principal').value);
+            let aR = parseFloat(document.querySelector('#amountRate').value);
+            let y = parseFloat(document.querySelector('#year').value);
+            let computeFV = computeFutureValue(principal, annualRate, years);
+
+            document.querySelector("#total").innerHTML = `Total Amount Due: $${total.toFixed(2)}`;
         }
 
-        function computeFutureValue(p, aR, y, pPY) {
-
+        function computeFutureValue(p, aR, y) {
+            return p*(1 + aR)^y;  
 
         }
 
