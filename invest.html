@@ -28,9 +28,9 @@
 
             let principal = parseFloat(document.querySelector('#principal').value);
             let annualRate = parseFloat(document.querySelector('#amountRate').value);
-            total = annualRate/12/100;
+           
             let years = parseFloat(document.querySelector('#year').value);
-            total = years*12;
+           
             let computeFV = computeFutureValue(principal, annualRate, years);
 
             document.querySelector("#total").innerHTML = `Future Investment Value: $${computeFV.toFixed(2)}`;
