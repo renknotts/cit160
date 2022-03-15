@@ -27,7 +27,7 @@
             // Input
             let tempF = parseFloat(document.querySelector('#temperature').value);
             let speed = parseFloat(document.querySelector('#windSpeed').value);
-            let windChill = windChill(tempF, speed);
+             windChill(tempF, speed);
            
             // Output
             document.querySelector("#output").innerHTML = `Wind chill is: ${output.toFixed(0)}`;
