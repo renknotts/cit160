@@ -16,13 +16,13 @@
     <br>
     <button onclick="doInputOutput()">Wind Chill</button>
     <br>
-    <div id="wChill"></div>
+    <div id="output"></div>
 
 
     <script>
         function doInputOutput() {
             // Declarations
-            
+            let output = 0;
 
             // Input
             let tempF = parseFloat(document.querySelector('#temperature').value);
@@ -30,7 +30,7 @@
             let wChill = windChill(tempF, speed);
            
             // Output
-            document.querySelector("#wChill").innerHTML = `Wind chill is: ${wChill.toFixed(0)}`;
+            document.querySelector("#output").innerHTML = `Wind chill is: ${output.toFixed(0)}`;
         }
 
         function windChill(t, s) {
