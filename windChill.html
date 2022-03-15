@@ -16,13 +16,13 @@
     <br>
     <button onclick="doInputOutput()">Wind Chill</button>
     <br>
-    <div id="output"></div>
+    <div id="wChill"></div>
 
 
     <script>
         function doInputOutput() {
             // Declarations
-            let output = 0;
+            let wChill = 0;
 
             // Input
             let tempF = parseFloat(document.querySelector('#temperature').value);
@@ -35,7 +35,7 @@
 
         function windChill(t, s) {
             // Processing
-            wChill = 0;
+            
             if (t > 50 && s > 3){ 
                 return 35.74 + 0.6215*t - 35.75*Math.pow(s,0.16) + 0.4275*t*Math.pow(s,0.16);   
             }
