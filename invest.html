@@ -39,6 +39,8 @@
         function computeFutureValue(p, aR, y) {
            
            let computeFV = 0;
+           let aR = aR/12/100;
+           let y = y*12;
             
             return computeFV + p * Math.pow(1 + aR,y);  
 
