@@ -28,7 +28,7 @@
             let tempF = parseFloat(document.querySelector('#temperature').value);
             let speed = parseFloat(document.querySelector('#windSpeed').value);
             let wChill = windChill(tempF, speed);
-            wChill =  35.74 + 0.6215*t - 35.75*Math.pow(s,0.16) + 0.4275*t*Math.pow(s,0.16);
+            output =  35.74 + 0.6215*t - 35.75*Math.pow(s,0.16) + 0.4275*t*Math.pow(s,0.16);
             // Output
             document.querySelector("#output").innerHTML = `Wind chill is: ${output.toFixed(0)}`;
         }
@@ -37,7 +37,7 @@
             // Processing
             let wChill = '';
             if (t < 50 && s > 3){}
-           return wChill;
+           return output;
         }
     </script>
 
