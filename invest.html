@@ -26,12 +26,12 @@
 
             let total = 0;
 
-            let p = parseFloat(document.querySelector('#principal').value);
-            let aR = parseFloat(document.querySelector('#amountRate').value);
-            let y = parseFloat(document.querySelector('#year').value);
+            let principal = parseFloat(document.querySelector('#principal').value);
+            let annualRate = parseFloat(document.querySelector('#amountRate').value);
+            let years = parseFloat(document.querySelector('#year').value);
             let computeFV = computeFutureValue(principal, annualRate, years);
 
-            document.querySelector("#total").innerHTML = `Total Amount Due: $${total.toFixed(2)}`;
+            document.querySelector("#total").innerHTML = `Total Amount Due: $${computeFV.toFixed(2)}`;
         }
 
         function computeFutureValue(p, aR, y) {
