@@ -31,11 +31,11 @@
             let years = parseFloat(document.querySelector('#year').value);
             let computeFV = computeFutureValue(principal, annualRate, years);
 
-            document.querySelector("#total").innerHTML = `Total Amount Due: $${computeFV.toFixed(2)}`;
+            document.querySelector("#total").innerHTML = `Future Investment Value: $${computeFV.toFixed(2)}`;
         }
 
         function computeFutureValue(p, aR, y) {
-            return p*(1 + aR)^y;  
+            return p*(1 + aR)*Math.pow(y);  
 
         }
 
