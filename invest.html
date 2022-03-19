@@ -33,13 +33,13 @@
             let periodPerYear = parseFloat(document.querySelector('#periodPerYear').value);
             let years = parseFloat(document.querySelector('#year').value);
            
-            let computeFV = computeFutureValue(principal, annualRate, years, period);
+            let computeFV = computeFutureValue(principal, annualRate, years, periodPerYear);
 
             document.querySelector("#total").innerHTML = `Future Investment Value: $${computeFV.toFixed(2)}`;
         }
 
         function computeFutureValue(p, aR, y, pP) {
-            
+            let computFV = 0;
             return  p * Math.pow(1 + aR/pP,y*pP);  
 
         }
