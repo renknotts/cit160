@@ -25,7 +25,7 @@
 
     <script>
         function doFV() {
-            let futureValue = 0;
+            
             let total = 0;
 
             let principal = parseFloat(document.querySelector('#principal').value);
@@ -39,7 +39,7 @@
         }
 
         function computeFutureValue(p, aR, y, pP) {
-            
+            let futureValue = 0;
             return  p * Math.pow(1 + aR/pP,y*pP);  
 
         }
