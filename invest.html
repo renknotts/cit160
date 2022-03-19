@@ -25,21 +25,21 @@
 
     <script>
         function doFV() {
-
-            let total = 0;
+            let futureValue = '';
+            let total = '';
 
             let principal = parseFloat(document.querySelector('#principal').value);
             let annualRate = parseFloat(document.querySelector('#amountRate').value);
             let periodPerYear = parseFloat(document.querySelector('#periodPerYear').value);
             let years = parseFloat(document.querySelector('#year').value);
            
-            let computeFV = computeFutureValue(principal, annualRate, years, periodPerYear);
+            let futureValue = computeFutureValue(principal, annualRate, years, periodPerYear);
 
-            document.querySelector("#total").innerHTML = `Future Investment Value: $${computeFV.toFixed(2)}`;
+            document.querySelector("#total").innerHTML = `Future Investment Value: $${futureValue.toFixed(2)}`;
         }
 
         function computeFutureValue(p, aR, y, pP) {
-            let computFV = 0;
+            
             return  p * Math.pow(1 + aR/pP,y*pP);  
 
         }
