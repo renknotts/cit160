@@ -38,31 +38,21 @@
             document.getElementById('output').innerHTML = output;
         }
 
-        function addEnds(x) {
+        function addEnds(x,y) {
            
             return x[0] + x[list1.length - 1];
-            
+            return y[0] + y[list2.length - 1];
         }
-        function addEnds(y) {
-           
-           return y[0] + y[list2.length - 1];
-           
-       }
+     
 
-        function getMiddle(m1) {
+        function getMiddle(m1,m2) {
            
 
             return m1[0] + m1[list1.length - 1] / 2;
-            
+            return m2[0] + m2[list2.length - 1] / 2;
 
         }
-        function getMiddle(m2) {
-           
-
-           return m2[0] + m2[list2.length - 1] / 2;
-           
-
-       }
+        
     </script>
 
 
