@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Arrays</h2>
+    <button onclick="test()">Click Here</button>
+    <div id="output"></div>
+
+    <script>
+        /* Defining Table
+         * Input: no user input
+         * Processing: Test the addEnds and getMiddle functions by calling them.
+         * Output: The values returned from the addEnds and getMiddle functions.
+         */
+        function test() {
+
+            let list1 = [17, 8, 9, 5, 20];
+            let list2 = [12, 4, 8, 15, 17, 5, 20, 11];
+
+            // Test the countEvens function by calling it two times.
+            let count1 = countEvens(list1);
+            let count2 = countEvens(list2);
+
+            // Test the multiply function by calling it two times.
+            let mult1 = multiply(list1, 3);
+            let mult2 = multiply(list2, 4);
+
+            // Build a string to display to the user.
+            let output = `Count 1: ${count1}<br>Count 2: ${count2}<br>Multiply 1: ${mult1}<br>Multiply 2: ${mult2}`;
+
+            // Display the output string for the user to see.
+            document.getElementById('output').innerHTML = output;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
